@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-size: 14px;
+}
+
+.help-block{
+	color:#FF0004;
+}
+	
+@media (max-width:576px){
+		
+	.profileCaptions{
+		text-align: left !important;
+		background-color:#FCFCFC;
+		padding: 1px;
+	}
+		
+}

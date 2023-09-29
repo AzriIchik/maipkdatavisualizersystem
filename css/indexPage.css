@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(animate.css);
+
+body{
+	padding: 0 !important;
+	margin: 0 !important;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.main-background{
+	background: url(../img/background-wallpaper.jpg) no-repeat center fixed;
+    background-size: cover;
+	min-height: 100vh;
+}
+
+.responsive-text-30{font-size: 30px;}
+.responsive-text-15{font-size: 15px;}
+.responsive-text-12{font-size: 12px;}
+
+/*for mobile view */
+@media (max-width: 450px) and (orientation: portrait){
+	
+	.responsive-text-30{font-size: 20px;}
+	.responsive-text-15{font-size: 13px;}
+	.responsive-text-12{font-size: 10px;}
+	
+}

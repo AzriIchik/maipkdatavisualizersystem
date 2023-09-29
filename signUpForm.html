@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sistem MAIPK</title>
+<link rel="icon" href="img/jais-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Bootstrap-->
+
+<!-- Bootstrap CSS CDN -->
+
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!--Jquery-->
+
+<script src="js/jquery.js" type="text/javascript"></script>
+
+<!-- validator -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js" type="text/javascript"></script>
+
+<!--google font-->
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+
+<!--sweet alert 2-->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+<!--Own style and script-->
+
+<link href="css/indexPage.css" rel="stylesheet">
+<script src="js/indexPage.js" type="text/javascript"></script>
+<script src="js/daftarform.js" type="text/javascript"></script>
+<style>
+.help-block {
+    color: #FF0004;
+}
+</style>
+</head>
+
+<!--form validator-->
+
+<body class="main-background">
+
+	<!--logo container-->
+	<div class="container">
+		<div class="row">
+		  <div class="col-12 p-4"> <img src="img/logo.png" class="img-fluid mx-auto d-block" alt="Logo"> </div>
+		</div>
+		
+		<div class="row">
+			
+			<div class="col-12">
+				
+				<div id="registerForm" class="col-md-8 mx-auto rounded bg-light fadeIn my-2">
+                <div class="row justify-content-center py-3">
+                    <h2 class="responsive-text-30 font-weight-bolder">DAFTAR PENGGUNA</h2>
+                  </div>
+                <div class="row p-3">
+                    <div class="col-12 mx-auto my-2">
+                    <form id="DaftarForm" class="container-fluid">
+                        <div class="form-group">
+                        <label for="DaftarNoTel" class="font-weight-bolder responsive-text-15">Nama:</label>
+                        <input name="first_name" placeholder="Nama Penuh" class="form-control"  type="text">
+                      </div>
+                        <div class="form-group">
+                        <label for="DaftarJantina">Jantina:</label>
+                        <select class="form-control" id="DaftarJantina" name="jantina">
+                            <option>LELAKI</option>
+                            <option>WANITA</option>
+                          </select>
+                      </div>
+                        <div class="form-group">
+                        <label for="DaftarNoStaff" class="font-weight-bolder responsive-text-15">No Staff:</label>
+                        <input type="text" class="form-control" id="DaftarNoStaff" name="DaftarNoStaff" aria-describedby="emailHelp" placeholder="Sila masukkan nombor staff anda">
+                      </div>
+                        <div class="form-group">
+                        <label for="DaftarKatalaluan" class="font-weight-bolder responsive-text-15">Katalaluan:</label>
+                        <input type="password" class="form-control" id="DaftarKatalaluan" name="DaftarKatalaluan" placeholder="Katalaluan">
+                      </div>
+                        <div class="form-group">
+                        <label for="DaftarNoTel" class="font-weight-bolder responsive-text-15">No Telefon:</label>
+                        <input type="text" class="form-control" id="DaftarNoTel" name="DaftarNoTel" placeholder="012-3456789">
+                      </div>
+                        <div class="form-group">
+                        <label for="DaftarEmail" class="font-weight-bolder responsive-text-15">E mail:</label>
+                        <input type="email" class="form-control" id="DaftarEmail" name="DaftarEmail" placeholder="username@gmail.com">
+                      </div>
+                        <button type="button" id="BTNCancelDaftar" class="btn btn-outline-danger responsive-text-15 mr-1">Tetap semula</button>
+                        <button type="submit" id="BTNApproveDaftar" class="btn btn-success responsive-text-15" onsubmit="return false">Daftar</button>
+                      </form>
+                  </div>
+                  </div>
+              </div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
